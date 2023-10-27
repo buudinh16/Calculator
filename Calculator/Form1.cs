@@ -21,5 +21,18 @@ namespace Calculator
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btCong_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(tbA.Text);
+            double b = double.Parse(tbB.Text);
+            double c = a + b;
+            tbKQ.Text = c.ToString();
+        }
     }
 }

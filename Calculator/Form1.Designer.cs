@@ -30,11 +30,11 @@ namespace Calculator
         private void InitializeComponent()
         {
             this.soA = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbA = new System.Windows.Forms.TextBox();
             this.soB = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbB = new System.Windows.Forms.TextBox();
             this.Kq = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbKQ = new System.Windows.Forms.TextBox();
             this.btCong = new System.Windows.Forms.Button();
             this.btTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -49,13 +49,13 @@ namespace Calculator
             this.soA.TabIndex = 0;
             this.soA.Text = "So a ";
             // 
-            // textBox1
+            // tbA
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(167, 71);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 29);
-            this.textBox1.TabIndex = 1;
+            this.tbA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbA.Location = new System.Drawing.Point(167, 71);
+            this.tbA.Name = "tbA";
+            this.tbA.Size = new System.Drawing.Size(100, 29);
+            this.tbA.TabIndex = 1;
             // 
             // soB
             // 
@@ -67,13 +67,13 @@ namespace Calculator
             this.soB.TabIndex = 0;
             this.soB.Text = "So b";
             // 
-            // textBox2
+            // tbB
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(167, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 29);
-            this.textBox2.TabIndex = 1;
+            this.tbB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbB.Location = new System.Drawing.Point(167, 118);
+            this.tbB.Name = "tbB";
+            this.tbB.Size = new System.Drawing.Size(100, 29);
+            this.tbB.TabIndex = 1;
             // 
             // Kq
             // 
@@ -86,13 +86,13 @@ namespace Calculator
             this.Kq.Text = "Ket qua";
             this.Kq.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox3
+            // tbKQ
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(167, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 29);
-            this.textBox3.TabIndex = 1;
+            this.tbKQ.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbKQ.Location = new System.Drawing.Point(167, 170);
+            this.tbKQ.Name = "tbKQ";
+            this.tbKQ.Size = new System.Drawing.Size(100, 29);
+            this.tbKQ.TabIndex = 1;
             // 
             // btCong
             // 
@@ -103,6 +103,7 @@ namespace Calculator
             this.btCong.TabIndex = 2;
             this.btCong.Text = "Cong";
             this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // btTru
             // 
@@ -121,14 +122,15 @@ namespace Calculator
             this.ClientSize = new System.Drawing.Size(424, 349);
             this.Controls.Add(this.btTru);
             this.Controls.Add(this.btCong);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbKQ);
             this.Controls.Add(this.Kq);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbB);
             this.Controls.Add(this.soB);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbA);
             this.Controls.Add(this.soA);
             this.Name = "Form1";
             this.Text = "Tính toán";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,11 +139,11 @@ namespace Calculator
         #endregion
 
         private System.Windows.Forms.Label soA;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbA;
         private System.Windows.Forms.Label soB;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbB;
         private System.Windows.Forms.Label Kq;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbKQ;
         private System.Windows.Forms.Button btCong;
         private System.Windows.Forms.Button btTru;
     }
