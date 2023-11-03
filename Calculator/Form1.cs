@@ -29,8 +29,8 @@ namespace Calculator
 
         private void btCong_Click(object sender, EventArgs e)
         {
-            if (tbA.Text != String.Empty)
-            {
+            if (tbA.Text != String.Empty && tbB.Text != String.Empty)
+            { 
                 double a = double.Parse(tbA.Text);
                 double b = double.Parse(tbB.Text);
                 double c = a + b;
