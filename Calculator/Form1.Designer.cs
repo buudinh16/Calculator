@@ -107,8 +107,8 @@ namespace Calculator
             // 
             // btTru
             // 
-            this.btTru.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btTru.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btTru.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btTru.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.btTru.Location = new System.Drawing.Point(86, 236);
             this.btTru.Name = "btTru";
             this.btTru.Size = new System.Drawing.Size(92, 35);
