@@ -29,10 +29,12 @@ namespace Calculator
 
         private void btCong_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(tbA.Text);
-            double b = double.Parse(tbB.Text);
-            double c = a + b;
-            tbKQ.Text = c.ToString();
+            if (tbA.Text != String.Empty && tbB.Text != String.Empty)
+            { double a = double.Parse(tbA.Text);
+                double b = double.Parse(tbB.Text);
+                double c = a + b;
+                tbKQ.Text = c.ToString();
+            }
         }
     }
 }
